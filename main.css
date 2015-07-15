@@ -1,0 +1,54 @@
+h1.welcome{
+    font-family: "Noto serif", sans-serif;
+    color: seagreen;
+    font-size: 72px;
+    text-align: center;
+    transition:color .2s ease-in, background 1s ease-out;
+}
+h1:hover { color:dimgray; }
+
+.container{
+    width: %100;
+    padding-right: 200px;
+    padding-left: 200px;
+}
+.left{float:left;width: auto;}
+.right{float:right ;width: auto}
+.center{margin:0 auto;width: 800px;font-size: 20px;}
+.centers{
+    text-align: center;
+    padding-left: 300px;
+}
+
+p.hover{
+    font-size: 30px;
+    color:Black; background:white;
+    transition:color 0.3s ease-out, background 1s ease-in;
+}
+p.hover:hover { color:yellowgreen; }
+ul{
+    text-align: left;
+}
+a{
+    color:lightslategray;
+    text-decoration: none;
+    text-align: left;
+    font-family: "Noto serif";
+    font-size: 35px;
+    transition:color 0.3s ease-out, background 1s ease-in;
+}
+a:link{
+text-decoration: none;
+}
+a:visited{
+    color:darkslategray;
+}
+li:hover{ color:dodgerblue;}
+label{
+    padding-left: 50px;
+    font-size: 55px;
+    font-family: "Noto serif";
+    transition:color 0.3s ease-out, background 1s ease-in;
+}
+label:hover{ color:darkgoldenrod;}
+a:hover{ color:steelblue}
