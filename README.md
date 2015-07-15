@@ -1,4 +1,4 @@
-# SpeedcubingTR_anasayfa
-speedcubingtr
+# SpeedcubingTR anasayfa
+SpeedcubingTR
 
 http://dogacel.com/speedcubingtr/
