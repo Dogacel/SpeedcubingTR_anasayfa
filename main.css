@@ -1,3 +1,7 @@
+body{
+    heigt: 100%;
+    width: 100%;
+}
 h1.welcome{
     font-family: "Noto serif", sans-serif;
     color: seagreen;
@@ -8,9 +12,13 @@ h1.welcome{
 h1:hover { color:dimgray; }
 
 .container{
-    width: %100;
-    padding-right: 200px;
-    padding-left: 200px;
+    width: 100%;
+    height: 100%;
+}
+div{
+    border: 8px ridge green;
+    border-style: ridge;
+    border-width: 5px;
 }
 .left{float:left;width: auto;}
 .right{float:right ;width: auto}
