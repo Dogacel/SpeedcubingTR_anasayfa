@@ -3,71 +3,124 @@
     <head>
         <title>SpeedcubingTR Anasayfa</title>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
-        <script src="scripts.js"></script>
+        <script type="text/javascript" src="jquery-1.11.3.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="main.css">
         <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Noto+Serif' rel='stylesheet' type='text/css'>
+        <script src="scripts.js"></script>
     </head>
-    <body>
-        <h1 class="welcome">Hoşgeldiniz !</h1>
-        <div class="container">
-           <div class="left">
-                <ul>
-                   <label>İçerik</label>
-                    <li><a href="#">Anasayfa</a></li>
-                    <li><a href="#">Forum</a></li>
-                    <li><a href="#">Çözümler</a></li>
-                    <li><a href="#">Çeviriciler</a></li>
-                </ul>
-            </div>
-            <div class="right">
+<body class="body">
+   <div class="headercenter">
+    <header class="mainheader">
+        <img src="img/logo.gif">
+        <img src="img/sctr.png">
+        <nav>
+            <ul class="tap">
+                <li class="active anasayfa"><a href="#">Anasayfa</a></li>
+                <li><a class="forum" href="#">Forum</a></li>
+                <li><a href="#" class="clc">Çözümler</a></li>
+                <li><a class="commutator "href="#">Çeviriciler</a></li>
+            </ul>
+        </nav>
+    </header>
+    </div>
+    <header class="cozumler">
+        <nav>
+            <ul class="tap">
+                <li><a href="#" class="clc">Çömez Metodu</a></li>
+                <li><a href="#" class="clc">Basit OLL/PLL</a></li>
+                <li><a href="#" class="clc">Keyhole Metodu</a></li>
+                <li><a href="#" class="clc">4x4x4 ve 5x5x5</a></li>
+                <li><a href="#" class="clc">3x3x3 BLD</a></li>
+                <li><a href="#" class="clc">2x2x2-Ortega</a></li>
+                <li><a href="#" class="clc">Fridrich Metodu</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="maincontent">
+        <div class="content">
+            <p class="anasayfa">Giriş:
+                Rubik küpünü çözmenin birçok yolu vardır. Bu sitede katman katman çözmenin basit ve gelişmiş yöntemleri olan çömez (beginner's) ve Fridrich yönteminin yazılı ve görüntülü, en önemlisi de Türkçe anlatımlarını bulabilirsiniz. Çömez yöntemini kullanarak kısa bir süre içinde 1 dakika gibi ortalamalara erişebilirsiniz. Tavsiye edilen öğrenme sırasını sayfanın altında bulabilirsiniz.
 
-                <ul style="list-style-type: none; text-align:right">
-                    <label>İçerik</label>
-                    <li><a href="#">Bilmemne</a></li>
-                    <li><a href="#">Bilmemne</a></li>
-                    <li><a href="#">Bilmemne</a></li>
-                    <li><a href="#">Bilmemne</a></li>
-                </ul>
-                <label>REKLAM</label><br>
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Rubik_cube.png/1024px-Rubik_cube.png" width="200px" height="200px" style="float:right">
-            </div>
-            <div class="center">
-                <p>
-                    Giriş:
-                    Rubik küpünü çözmenin birçok yolu vardır. Bu sitede katman katman çözmenin basit ve gelişmiş yöntemleri olan çömez (beginner's) ve Fridrich yönteminin yazılı ve görüntülü, en önemlisi de Türkçe anlatımlarını bulabilirsiniz. Çömez yöntemini kullanarak kısa bir süre içinde 1 dakika gibi ortalamalara erişebilirsiniz. Tavsiye edilen öğrenme sırasını sayfanın altında bulabilirsiniz.
+                3x3x3 Rubik Küpünün Mekanizması:
+                3x3x3 Rubik Küpünde 12 kenar, 8 köşe ve 6 orta (merkez) parçası olmak üzere 26 parça vardır. Yapılan hiçbir hamle merkez parçaların yerlerinde bir değişikliğe neden olmaz. Bu nedenle hangi yüzde hangi rengin olacağını ortadaki renge bakarak belirleyebiliriz.
 
-                    3x3x3 Rubik Küpünün Mekanizması:
-                    3x3x3 Rubik Küpünde 12 kenar, 8 köşe ve 6 orta (merkez) parçası olmak üzere 26 parça vardır. Yapılan hiçbir hamle merkez parçaların yerlerinde bir değişikliğe neden olmaz. Bu nedenle hangi yüzde hangi rengin olacağını ortadaki renge bakarak belirleyebiliriz.
+                Notasyon:
+                Herhangi bir yöntemi öğrenmeye başlamadan önce notasyon bilgisine sahip olmak gerekir. WorldCubeAssociation'un yayınladığı resmi notasyon şu şekildedir:
+                U (Up) - Üst Katman
+                R (Right) - Sağ Katman
+                L (Left) - Sol Katman
+                B (Back) - Arka Katman
+                D (Down) - Aşağı Katman
+                F (Front) - Ön Katman
 
-                    Notasyon:
-                    Herhangi bir yöntemi öğrenmeye başlamadan önce notasyon bilgisine sahip olmak gerekir. WorldCubeAssociation'un yayınladığı resmi notasyon şu şekildedir:
-                    U (Up) - Üst Katman
-                    R (Right) - Sağ Katman
-                    L (Left) - Sol Katman
-                    B (Back) - Arka Katman
-                    D (Down) - Aşağı Katman
-                    F (Front) - Ön Katman
+                Notasyonun Uygulanması:
+                Bir hamle yaparken her zaman küpün o yüzüne bakıyormuşçasına yapmak gerekir. Örneğin U, küpün üst yüzünü 90 derece saat yönünde döndür anlamına gelir. U ters, veya U', üst yüzün 90 derece saat yönünün tersinde hareket ettirilmesini gerektirir. U2 de yön fark etmeksizin üst katmanı 180 derece döndürmek demektir. Örnek olarak R hamlesi sağ katmanı ileri doğru hareket ettırmeyı gerektirirken L hamlesi sol katmanı bize doğru döndürmeyi gerektirir; çünkü her hamle o yüze bakarken yapılır. sağ katmanı saat yönünde döndürmekle sol katmanı saat yönünde döndürmek ters yönlere doğru hareket ettirmek demektir.
 
-                    Notasyonun Uygulanması:
-                    Bir hamle yaparken her zaman küpün o yüzüne bakıyormuşçasına yapmak gerekir. Örneğin U, küpün üst yüzünü 90 derece saat yönünde döndür anlamına gelir. U ters, veya U', üst yüzün 90 derece saat yönünün tersinde hareket ettirilmesini gerektirir. U2 de yön fark etmeksizin üst katmanı 180 derece döndürmek demektir. Örnek olarak R hamlesi sağ katmanı ileri doğru hareket ettırmeyı gerektirirken L hamlesi sol katmanı bize doğru döndürmeyi gerektirir; çünkü her hamle o yüze bakarken yapılır. sağ katmanı saat yönünde döndürmekle sol katmanı saat yönünde döndürmek ters yönlere doğru hareket ettirmek demektir.
+                Ayrıca bilinmesi tavsiye edilen diğer notasyonlar:
+                Herhangi bir harfin sonuna gelen "w" harfi, çift katman hareketi demektir. örneğin Rw, hem R hem de orta katmanın beraber hareket ettirilmesini gerektirir.
+                4x4x4 ve 5x5x5 küplerde gecen küçük harfli notasyonlar (örneğin r) o katman sabit kalacak şekilde onun bir yanındaki katmanın hareket ettirilmesini gerektirir. (r = Rw + R')
+                M (Middle) - Sol ve sağ katman arasında kalan orta katmanı hareket ettirme.
+                E (Equator) - Üst ve alt katman arasında kalan ekvator katmanını hareket ettirme.
+                S (Slice) - Ön ve arka katman arasında kalan katmanı hareket ettirme.
+                x - Küpte herhangi bir hamle yapmadan küpü x ekseni etrafında döndürme.
+                y - Küpte herhangi bir hamle yapmadan küpü y ekseni etrafında döndürme.
+                z - Küpte herhangi bir hamle yapmadan küpü z ekseni etrafında döndürme.
 
-                    Ayrıca bilinmesi tavsiye edilen diğer notasyonlar:
-                    Herhangi bir harfin sonuna gelen "w" harfi, çift katman hareketi demektir. örneğin Rw, hem R hem de orta katmanın beraber hareket ettirilmesini gerektirir.
-                    4x4x4 ve 5x5x5 küplerde gecen küçük harfli notasyonlar (örneğin r) o katman sabit kalacak şekilde onun bir yanındaki katmanın hareket ettirilmesini gerektirir. (r = Rw + R')
-                    M (Middle) - Sol ve sağ katman arasında kalan orta katmanı hareket ettirme.
-                    E (Equator) - Üst ve alt katman arasında kalan ekvator katmanını hareket ettirme.
-                    S (Slice) - Ön ve arka katman arasında kalan katmanı hareket ettirme.
-                    x - Küpte herhangi bir hamle yapmadan küpü x ekseni etrafında döndürme.
-                    y - Küpte herhangi bir hamle yapmadan küpü y ekseni etrafında döndürme.
-                    z - Küpte herhangi bir hamle yapmadan küpü z ekseni etrafında döndürme.
+                Daha fazla bilgi için: http://www.worldcubeassociation.org/regulations/#notation
+            </p>
+            <p class="forum">NaN</p>
+            <p class="comez">Çömez metodu, Rubik küpünü çözmeyi ilk kez öğrenenler için önerilen bir metoddur; fakat bu metodu çok uzun süre kullanmak tavsiye edilmez. Bu metod sadece Rubik küpünün ne olduğunu az çok kavramaktır. Daha gelişmiş metodlara bir geçiş niteliğindedir.
 
-                    Daha fazla bilgi için: http://www.worldcubeassociation.org/regulations/#notation
+                Bölüm 1 - İzle
 
-                </p>
-            </div>
+                Bölüm 2 - İzle
 
+
+                Algoritmalar:
+
+                U R U' R' U' F' U F
+
+                U' L' U L U F U' F'
+
+                F R U R' U' F'
+
+                R U R' U R U2 R'
+
+                U R U' L' U R' U' L
+
+                R' D' R D
+            </p>
+            <p class="basitoll">OLL
+                R U R' U R U2 R'
+
+                R U2 R' U' R U' R'
+
+                R U R' U R U' R' U R U2 R'
+
+                R U2 R2 U' R2 U' R2 U2 R
+
+                Lw' U' L U R U' Rw' F
+
+                R2 D R' U2 R D' R' U2 R'
+
+                R' F R B' R' F' R B
+
+
+                PLL
+                F R U' R' U' R U R' F' R U R' U' R' F R F'
+
+                R U R' U' R' F R2 U' R' U' R U R' F'
+
+                R U' R U R U R U' R' U' R2
+
+                R2 U R U R' U' R' U' R' U R'
+
+                M2 U M2 U2 M2 U M2
+
+                M2 U' M' U2 M2 U2 M' U M2 </p>
         </div>
-    </body>
+    </div>
+</body>
 </html>

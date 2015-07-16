@@ -1,5 +1,5 @@
 body{
-    background-color: aliceblue;
+    background-color: floralwhite;
     font-size: 87.5%;
     font-family: arial;
     line-height: 1.5;
@@ -138,6 +138,7 @@ h2{
     width: 92%;
     margin: 10px auto;
     color:#FFF;
+    border
 }
 
 @media only screen and (min-width: 150px) and (max-width: 600px)
