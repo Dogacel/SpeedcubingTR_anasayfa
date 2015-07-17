@@ -25,11 +25,15 @@ div.navbar-cozumler{
     display: none;
     margin-top: 0.4%;;
 }
-div.sc, div.sn{
+div.sc, div.sn, div.sf{
     display: inline-block;
     vertical-align: top;
 }
-div.sc button, div.sn button{
+div.sf{
+    margin-top: 2%;
+    display: block;
+}
+div.sc button, div.sn button, div.sf button{
     padding: 10px 15px;
     background: #4479BA;
     color: #FFF;
@@ -44,6 +48,12 @@ div.sc button, div.sn button{
 }
 .subfridrich {
     display: none;
+    position: absolute;
+}
+.subber{
+    text-align: center;
+    position: relative;
+    margin: auto;
 }
 div.content{
     margin: auto;
