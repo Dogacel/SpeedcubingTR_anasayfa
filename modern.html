@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<!-- title and meta -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta name="description" content="A simple slide down menu using jQuery and CSS" />
+<title>Slide Down Menu With jQuery</title>
+    
+<!-- css -->
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/style.css" />
+    
+<!-- js -->
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+    $(document).ready(function() {
+        $( '.dropdown' ).hover(
+            function(){
+                $(this).children('.sub-menu').slideDown(400);
+            },
+            function(){
+                $(this).children('.sub-menu').slideUp(400);
+            }
+        );
+    }); // end ready
+</script>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<div id="top-bar">
+    <div class="content clearfix">
+        <span class="all-labs"><a href="http://speedcubingtr.com/forum">&larr; Foruma dön</a></span>
+        <span class="back-to-tutorial"><a href="http://speedcubingtr.com/forum">Foruma ilerle</a></span>
+    </div>
+</div>
+
+<header>
+    <div id="title" class="content">
+        <h1>SpeedCubingTR</h1>
+        <h2>SpeedCubingTR'ye hoş geldiniz !</h2>
+    </div>
+</header>
+
+<nav>
+    <ul class="content clearfix">
+        <li><a href="#">Anasayfa</a></li>
+        <li><a href="#">Forum</a></li>
+        <li class="dropdown">
+            <a href="#">Çözümler</a>
+            <ul class="sub-menu">
+                <li><a href="#">Çömez Metodu</a></li>
+                <li><a href="#">Basit OLL/PLL</a></li>
+                <li><a href="#">Keyhole Metodu</a></li>
+                <li><a href="#">4x4x4 ve 5x5x5</a></li>
+                <li><a href="#">3x3x3 BLD</a></li>
+                <li><a href="#">2x2x2 Ortega</a></li>
+                
+                <li class="dropdown">
+                    <a href="#">Fridrich Metodu</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">F2L</a></li>
+                        <li><a href="#">OLL</a></li>
+                        <li><a href="#">PLL</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">Çeviriciler</a></li>
+    </ul>
+</nav>
+
+<div id="main">
+    <div class="content">
+        <p class="anasayfa">Giriş: <br>
+Rubik küpünü çözmenin birçok yolu vardır. Bu sitede katman katman çözmenin basit ve gelişmiş yöntemleri olan çömez (beginner's) ve Fridrich yönteminin yazılı ve görüntülü, en önemlisi de Türkçe anlatımlarını bulabilirsiniz. Çömez yöntemini kullanarak kısa bir süre içinde 1 dakika gibi ortalamalara erişebilirsiniz. Tavsiye edilen öğrenme sırasını sayfanın altında bulabilirsiniz. <br>
+
+3x3x3 Rubik Küpünün Mekanizması: <br>
+3x3x3 Rubik Küpünde 12 kenar, 8 köşe ve 6 orta (merkez) parçası olmak üzere 26 parça vardır. Yapılan hiçbir hamle merkez parçaların yerlerinde bir değişikliğe neden olmaz. Bu nedenle hangi yüzde hangi rengin olacağını ortadaki renge bakarak belirleyebiliriz.
+<br>
+Notasyon: <br>
+Herhangi bir yöntemi öğrenmeye başlamadan önce notasyon bilgisine sahip olmak gerekir. WorldCubeAssociation'un yayınladığı resmi notasyon şu şekildedir: <br>
+U (Up) - Üst Katman <br>
+R (Right) - Sağ Katman <br>
+L (Left) - Sol Katman <br>
+B (Back) - Arka Katman <br>
+D (Down) - Aşağı Katman <br>
+F (Front) - Ön Katman <br>
+
+Notasyonun Uygulanması: <br>
+Bir hamle yaparken her zaman küpün o yüzüne bakıyormuşçasına yapmak gerekir. Örneğin U, küpün üst yüzünü 90 derece saat yönünde döndür anlamına gelir. U ters, veya U', üst yüzün 90 derece saat yönünün tersinde hareket ettirilmesini gerektirir. U2 de yön fark etmeksizin üst katmanı 180 derece döndürmek demektir. Örnek olarak R hamlesi sağ katmanı ileri doğru hareket ettırmeyı gerektirirken L hamlesi sol katmanı bize doğru döndürmeyi gerektirir; çünkü her hamle o yüze bakarken yapılır. sağ katmanı saat yönünde döndürmekle sol katmanı saat yönünde döndürmek ters yönlere doğru hareket ettirmek demektir.
+<br>
+Ayrıca bilinmesi tavsiye edilen diğer notasyonlar: <br>
+Herhangi bir harfin sonuna gelen "w" harfi, çift katman hareketi demektir. örneğin Rw, hem R hem de orta katmanın beraber hareket ettirilmesini gerektirir. <br>
+4x4x4 ve 5x5x5 küplerde gecen küçük harfli notasyonlar (örneğin r) o katman sabit kalacak şekilde onun bir yanındaki katmanın hareket ettirilmesini gerektirir. (r = Rw + R') <br>
+M (Middle) - Sol ve sağ katman arasında kalan orta katmanı hareket ettirme. <br>
+E (Equator) - Üst ve alt katman arasında kalan ekvator katmanını hareket ettirme. <br>
+S (Slice) - Ön ve arka katman arasında kalan katmanı hareket ettirme. <br>
+x - Küpte herhangi bir hamle yapmadan küpü x ekseni etrafında döndürme. <br>
+y - Küpte herhangi bir hamle yapmadan küpü y ekseni etrafında döndürme. <br>
+z - Küpte herhangi bir hamle yapmadan küpü z ekseni etrafında döndürme. <br>
+
+Daha fazla bilgi için: http://www.worldcubeassociation.org/regulations/#notation
+</p>
+        <p class="comez" style="display:none;">Çömez metodu, Rubik küpünü çözmeyi ilk kez öğrenenler için önerilen bir metoddur; fakat bu metodu çok uzun süre kullanmak tavsiye edilmez. Bu metod sadece Rubik küpünün ne olduğunu az çok kavramaktır. Daha gelişmiş metodlara bir geçiş niteliğindedir. <br>
+
+Bölüm 1 - İzle <br>
+
+Bölüm 2 - İzle <br>
+
+
+Algoritmalar: <br>
+
+ U R U' R' U' F' U F <br> 
+
+ U' L' U L U F U' F' <br>
+
+ F R U R' U' F' <br>
+
+ R U R' U R U2 R' <br>
+
+ U R U' L' U R' U' L <br>
+
+ R' D' R D <br></p>
+    </div>
+</div>
+
+
+<footer>
+</footer>
+
+
+
+</div>
+
+
+</body>
+</html>
