@@ -1,26 +1,13 @@
 body{
-    font-size: 20px;
+    font-size: 32px;
     text-align: center;
 }
 .header{
     width: 80%;
     margin: auto;
-    margin-top: 5%;
+    margin-top: 3%;
 }
-a{
-    text-decoration: none;
-}
-ul{
-    list-style: none;
-}
-li{
-    display: inline-block;
-    background-color: #ABB;
-    height: 30px;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-}
+a{text-decoration: none;}
 div.navbar-cozumler{
     display: none;
     margin-top: 0.4%;;
@@ -28,23 +15,26 @@ div.navbar-cozumler{
 div.sc, div.sn, div.sf{
     display: inline-block;
     vertical-align: top;
+    margin-right: -2px;
 }
 div.sf{
     margin-top: 2%;
     display: block;
+    background-color: #BB4456;
 }
 div.sc button, div.sn button, div.sf button{
+    font-size:22px;
     padding: 10px 15px;
-    background: #4479BA;
+    background: #BB4456;
     color: #FFF;
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-    border: solid 1px #20538D;
-    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
-    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 1px 1px rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    border: solid 2px #AA2342;
+    text-shadow: 0 -2px 0 rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.4), 0 2px 2px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.4), 0 2px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 2px 0 rgba(255, 255, 255, 0.4), 0 2px 2px rgba(0, 0, 0, 0.2);
 }
 .subfridrich {
     display: none;
@@ -58,4 +48,22 @@ div.sc button, div.sn button, div.sf button{
 div.content{
     margin: auto;
     width: 50%;
+}
+button:focus{
+    outline-style: groove;
+    outline-width: medium;
+    outline-color: darkred;
+}
+.content{
+    margin-top: 200px;
+    border-radius: 10px;
+    border: solid 3px #23A2BA;
+}
+.timer{
+    margin-right: 15%;
+    margin-left: 15%;
+    margin-top: 2%;
+    border-radius: 7px;
+    border: solid 4px #22A33A;
+    margin-bottom: 1%;
 }

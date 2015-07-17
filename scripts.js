@@ -20,7 +20,7 @@ function comez(){
     fridrichup();
     displaynone();
     $(".content").children("p.comez").css('display','block');}
-function oll(){
+function boll(){
     fridrichup();
     displaynone();
     $(".content").children("p.basitoll").css('display','block');}
@@ -49,3 +49,5 @@ function oll(){
 function pll(){
     displaynone();
     $(".content").children("p.pll").css('display','block');}
+
+anasayfa();

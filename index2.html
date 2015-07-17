@@ -7,8 +7,14 @@
     <link rel="stylesheet" type="text/css" href="index2.css">
     <script src="scripts.js"></script>
 </head>
-<body>
+<body onload="anasayfa()">
     <div class="header">
+        <div class="image">
+           <img src="img/logo.gif" style="max-height:120px;">
+        </div>
+        <div class="timer">
+           <p>R F U2 R' L2 D2 R D' U2 R' L2 U L' R' U2 D R2 D R</p>
+        </div>
         <div class="navbar">
             <div>
                 <div class="sn"><button onclick="anasayfa()">Anasayfa</button></div>
@@ -21,7 +27,7 @@
     <div class="navbar-cozumler">
         <div>
             <div class="sc"><button onclick="comez()">Çömez Metodu</button></div>
-            <div class="sc"><button onclick="oll()">Basit OLL/PLL</button></div>
+            <div class="sc"><button onclick="boll()">Basit OLL/PLL</button></div>
             <div class="sc"><button onclick="keyhole()">Keyhole Metodu</button></div>
             <div class="sc"><button onclick="a444()">4x4x4 ve 5x5x5</button></div>
             <div class="sc"><button onclick="bld()">3x3x3 Gözü Kapalı</button></div>
@@ -37,6 +43,7 @@
             </div>
         </div>
     </div>
+    <div style="margin-top:2%;">
     <div class="content">
         <p class="anasayfa">Anasayfa burada</p>
         <p class="cozumler">Çözümler burada</p>
@@ -50,6 +57,6 @@
         <p class="f2l">F2L burada</p>
         <p class="oll">OLL burada</p>
         <p class="pll">PLL burada</p>
-    </div>
+    </div></div>
 </body>
 </html>
