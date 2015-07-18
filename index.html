@@ -1,124 +1,257 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-    <head>
-        <title>SpeedcubingTR Anasayfa</title>
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/>
-        <script type="text/javascript" src="jquery-1.11.3.js"></script>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="main.css">
-        <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Noto+Serif' rel='stylesheet' type='text/css'>
-        <script src="scripts.js"></script>
-    </head>
-<body class="body">
-   <div class="headercenter">
-    <header class="mainheader">
-        <nav>
-            <ul class="tap">
-                <li class="active anasayfa"><a href="#">Anasayfa</a></li>
-                <li><a class="forum" href="#">Forum</a></li>
-                <li><a href="#" class="clc">Çözümler</a></li>
-                <li><a class="commutator" href="#">Çeviriciler</a></li>
-            </ul>
-        </nav>
-    </header>
+<html lang="en">
+
+<head>
+
+<!-- title and meta -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta name="description" content="A simple slide down menu using jQuery and CSS" />
+<title>Slide Down Menu With jQuery</title>
+    
+<!-- css -->
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="css/base.css" />
+<link rel="stylesheet" href="css/style.css" />
+    
+<!-- js -->
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/scripts.js"></script>
+<script>
+    $(document).ready(function() {
+        $( '.dropdown' ).hover(
+            function(){
+                $(this).children('.sub-menu').stop().slideDown(400);
+            },
+            function(){
+                $(this).children('.sub-menu').stop().slideUp(400);
+            }
+        );
+    }); // end ready
+</script>
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<div id="top-bar">
+    <div class="content clearfix">
+        <span class="all-labs"><a href="#" onclick="goback()">&larr; Önceki sayfaya dön.</a></span>
+        <span class="back-to-tutorial"><a href="#" onclick="giris()">Giriş Yap</a></span>
     </div>
-    <header class="cozumler">
-        <nav>
-            <ul class="tap">
-                <li><a href="#" class="clc">Çömez Metodu</a></li>
-                <li><a href="#" class="clc">Basit OLL/PLL</a></li>
-                <li><a href="#" class="clc">Keyhole Metodu</a></li>
-                <li><a href="#" class="clc">4x4x4 ve 5x5x5</a></li>
-                <li><a href="#" class="clc">3x3x3 BLD</a></li>
-                <li><a href="#" class="clc">2x2x2-Ortega</a></li>
-                <li><a href="#" class="clc">Fridrich Metodu</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="maincontent">
-        <div class="content">
-            <p class="anasayfa">Giriş:
-                Rubik küpünü çözmenin birçok yolu vardır. Bu sitede katman katman çözmenin basit ve gelişmiş yöntemleri olan çömez (beginner's) ve Fridrich yönteminin yazılı ve görüntülü, en önemlisi de Türkçe anlatımlarını bulabilirsiniz. Çömez yöntemini kullanarak kısa bir süre içinde 1 dakika gibi ortalamalara erişebilirsiniz. Tavsiye edilen öğrenme sırasını sayfanın altında bulabilirsiniz.
+</div>
 
-                3x3x3 Rubik Küpünün Mekanizması:
-                3x3x3 Rubik Küpünde 12 kenar, 8 köşe ve 6 orta (merkez) parçası olmak üzere 26 parça vardır. Yapılan hiçbir hamle merkez parçaların yerlerinde bir değişikliğe neden olmaz. Bu nedenle hangi yüzde hangi rengin olacağını ortadaki renge bakarak belirleyebiliriz.
-
-                Notasyon:
-                Herhangi bir yöntemi öğrenmeye başlamadan önce notasyon bilgisine sahip olmak gerekir. WorldCubeAssociation'un yayınladığı resmi notasyon şu şekildedir:
-                U (Up) - Üst Katman
-                R (Right) - Sağ Katman
-                L (Left) - Sol Katman
-                B (Back) - Arka Katman
-                D (Down) - Aşağı Katman
-                F (Front) - Ön Katman
-
-                Notasyonun Uygulanması:
-                Bir hamle yaparken her zaman küpün o yüzüne bakıyormuşçasına yapmak gerekir. Örneğin U, küpün üst yüzünü 90 derece saat yönünde döndür anlamına gelir. U ters, veya U', üst yüzün 90 derece saat yönünün tersinde hareket ettirilmesini gerektirir. U2 de yön fark etmeksizin üst katmanı 180 derece döndürmek demektir. Örnek olarak R hamlesi sağ katmanı ileri doğru hareket ettırmeyı gerektirirken L hamlesi sol katmanı bize doğru döndürmeyi gerektirir; çünkü her hamle o yüze bakarken yapılır. sağ katmanı saat yönünde döndürmekle sol katmanı saat yönünde döndürmek ters yönlere doğru hareket ettirmek demektir.
-
-                Ayrıca bilinmesi tavsiye edilen diğer notasyonlar:
-                Herhangi bir harfin sonuna gelen "w" harfi, çift katman hareketi demektir. örneğin Rw, hem R hem de orta katmanın beraber hareket ettirilmesini gerektirir.
-                4x4x4 ve 5x5x5 küplerde gecen küçük harfli notasyonlar (örneğin r) o katman sabit kalacak şekilde onun bir yanındaki katmanın hareket ettirilmesini gerektirir. (r = Rw + R')
-                M (Middle) - Sol ve sağ katman arasında kalan orta katmanı hareket ettirme.
-                E (Equator) - Üst ve alt katman arasında kalan ekvator katmanını hareket ettirme.
-                S (Slice) - Ön ve arka katman arasında kalan katmanı hareket ettirme.
-                x - Küpte herhangi bir hamle yapmadan küpü x ekseni etrafında döndürme.
-                y - Küpte herhangi bir hamle yapmadan küpü y ekseni etrafında döndürme.
-                z - Küpte herhangi bir hamle yapmadan küpü z ekseni etrafında döndürme.
-
-                Daha fazla bilgi için: http://www.worldcubeassociation.org/regulations/#notation
-            </p>
-            <p class="forum">NaN</p>
-            <p class="comez">Çömez metodu, Rubik küpünü çözmeyi ilk kez öğrenenler için önerilen bir metoddur; fakat bu metodu çok uzun süre kullanmak tavsiye edilmez. Bu metod sadece Rubik küpünün ne olduğunu az çok kavramaktır. Daha gelişmiş metodlara bir geçiş niteliğindedir.
-
-                Bölüm 1 - İzle
-
-                Bölüm 2 - İzle
-
-
-                Algoritmalar:
-
-                U R U' R' U' F' U F
-
-                U' L' U L U F U' F'
-
-                F R U R' U' F'
-
-                R U R' U R U2 R'
-
-                U R U' L' U R' U' L
-
-                R' D' R D
-            </p>
-            <p class="basitoll">OLL
-                R U R' U R U2 R'
-
-                R U2 R' U' R U' R'
-
-                R U R' U R U' R' U R U2 R'
-
-                R U2 R2 U' R2 U' R2 U2 R
-
-                Lw' U' L U R U' Rw' F
-
-                R2 D R' U2 R D' R' U2 R'
-
-                R' F R B' R' F' R B
-
-
-                PLL
-                F R U' R' U' R U R' F' R U R' U' R' F R F'
-
-                R U R' U' R' F R2 U' R' U' R U R' F'
-
-                R U' R U R U R U' R' U' R2
-
-                R2 U R U R' U' R' U' R' U R'
-
-                M2 U M2 U2 M2 U M2
-
-                M2 U' M' U2 M2 U2 M' U M2 </p>
-        </div>
+<header>
+    <div id="title" class="content">
+        <h1>SpeedCubingTR</h1>
+        <h2>SpeedCubingTR'ye hoş geldiniz !</h2>
     </div>
+</header>
+
+<nav>
+    <ul class="content clearfix">
+        <li><a href="#" onclick="anasayfa()">Anasayfa</a></li>
+        <li><a href="#" onclick="forum()">Forum</a></li>
+        <li class="dropdown">
+            <a href="#">Çözümler</a>
+            <ul class="sub-menu">
+                <li><a href="#" onclick="comez()">Çömez Metodu</a></li>
+                <li><a href="#" onclick="boll()">Basit OLL/PLL</a></li>
+                <li><a href="#" onclick="keyhole()">Keyhole Metodu</a></li>
+                <li><a href="#" onclick="a444()">4x4x4 ve 5x5x5</a></li>
+                <li><a href="#" onclick="bld()">3x3x3 BLD</a></li>
+                <li><a href="#" onclick="a222()">2x2x2 Ortega</a></li>
+                <li class="dropdown">
+                    <a href="#">Fridrich Metodu</a>
+                    <ul class="sub-menu">
+                        <li><a href="#" onclick="f2l()">F2L</a></li>
+                        <li><a href="#" onclick="oll()">OLL</a></li>
+                        <li><a href="#" onclick="pll()">PLL</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#" onclick="cevirici()">Çeviriciler</a></li>
+    </ul>
+</nav>
+
+<div id="main">
+    <div class="content">
+        <p class="anasayfa">Giriş: <br>
+Rubik küpünü çözmenin birçok yolu vardır. Bu sitede katman katman çözmenin basit ve gelişmiş yöntemleri olan çömez (beginner's) ve Fridrich yönteminin yazılı ve görüntülü, en önemlisi de Türkçe anlatımlarını bulabilirsiniz. Çömez yöntemini kullanarak kısa bir süre içinde 1 dakika gibi ortalamalara erişebilirsiniz. Tavsiye edilen öğrenme sırasını sayfanın altında bulabilirsiniz. <br>
+
+3x3x3 Rubik Küpünün Mekanizması: <br>
+3x3x3 Rubik Küpünde 12 kenar, 8 köşe ve 6 orta (merkez) parçası olmak üzere 26 parça vardır. Yapılan hiçbir hamle merkez parçaların yerlerinde bir değişikliğe neden olmaz. Bu nedenle hangi yüzde hangi rengin olacağını ortadaki renge bakarak belirleyebiliriz.
+<br>
+Notasyon: <br>
+Herhangi bir yöntemi öğrenmeye başlamadan önce notasyon bilgisine sahip olmak gerekir. WorldCubeAssociation'un yayınladığı resmi notasyon şu şekildedir: <br>
+U (Up) - Üst Katman <br>
+R (Right) - Sağ Katman <br>
+L (Left) - Sol Katman <br>
+B (Back) - Arka Katman <br>
+D (Down) - Aşağı Katman <br>
+F (Front) - Ön Katman <br>
+
+Notasyonun Uygulanması: <br>
+Bir hamle yaparken her zaman küpün o yüzüne bakıyormuşçasına yapmak gerekir. Örneğin U, küpün üst yüzünü 90 derece saat yönünde döndür anlamına gelir. U ters, veya U', üst yüzün 90 derece saat yönünün tersinde hareket ettirilmesini gerektirir. U2 de yön fark etmeksizin üst katmanı 180 derece döndürmek demektir. Örnek olarak R hamlesi sağ katmanı ileri doğru hareket ettırmeyı gerektirirken L hamlesi sol katmanı bize doğru döndürmeyi gerektirir; çünkü her hamle o yüze bakarken yapılır. sağ katmanı saat yönünde döndürmekle sol katmanı saat yönünde döndürmek ters yönlere doğru hareket ettirmek demektir.
+<br>
+Ayrıca bilinmesi tavsiye edilen diğer notasyonlar: <br>
+Herhangi bir harfin sonuna gelen "w" harfi, çift katman hareketi demektir. örneğin Rw, hem R hem de orta katmanın beraber hareket ettirilmesini gerektirir. <br>
+4x4x4 ve 5x5x5 küplerde gecen küçük harfli notasyonlar (örneğin r) o katman sabit kalacak şekilde onun bir yanındaki katmanın hareket ettirilmesini gerektirir. (r = Rw + R') <br>
+M (Middle) - Sol ve sağ katman arasında kalan orta katmanı hareket ettirme. <br>
+E (Equator) - Üst ve alt katman arasında kalan ekvator katmanını hareket ettirme. <br>
+S (Slice) - Ön ve arka katman arasında kalan katmanı hareket ettirme. <br>
+x - Küpte herhangi bir hamle yapmadan küpü x ekseni etrafında döndürme. <br>
+y - Küpte herhangi bir hamle yapmadan küpü y ekseni etrafında döndürme. <br>
+z - Küpte herhangi bir hamle yapmadan küpü z ekseni etrafında döndürme. <br>
+
+Daha fazla bilgi için: http://www.worldcubeassociation.org/regulations/#notation
+</p>
+        <p class="comez" style="display:none;">Çömez metodu, Rubik küpünü çözmeyi ilk kez öğrenenler için önerilen bir metoddur; fakat bu metodu çok uzun süre kullanmak tavsiye edilmez. Bu metod sadece Rubik küpünün ne olduğunu az çok kavramaktır. Daha gelişmiş metodlara bir geçiş niteliğindedir. <br>
+
+Bölüm 1 - İzle <br>
+
+Bölüm 2 - İzle <br>
+
+
+Algoritmalar: <br>
+
+ U R U' R' U' F' U F <br> 
+
+ U' L' U L U F U' F' <br>
+
+ F R U R' U' F' <br>
+
+ R U R' U R U2 R' <br>
+
+ U R U' L' U R' U' L <br>
+
+ R' D' R D <br></p>
+        <p class="ceviriciler" style="display:none;">Çeviriciler, (İngilizce ismiyle commutators) hem küpü biraz daha anlamanızı sağlayacak, hem de kendi algoritmalarınızı üretmenize yardım edecek bir kavram. İzlemek için aşağıdaki linke tıklayın.
+<br><br>
+Çeviricileri İzle</p>
+        <p class="basitoll" style="display:none;">OLL <br>
+ R U R' U R U2 R' <br>
+
+ R U2 R' U' R U' R' 
+<br>
+ R U R' U R U' R' U R U2 R' 
+<br>
+ R U2 R2 U' R2 U' R2 U2 R 
+<br>
+ Lw' U' L U R U' Rw' F 
+<br>
+ R2 D R' U2 R D' R' U2 R' 
+<br>
+ R' F R B' R' F' R B 
+<br>
+
+PLL <br>
+ F R U' R' U' R U R' F' R U R' U' R' F R F' 
+<br>
+ R U R' U' R' F R2 U' R' U' R U R' F' 
+<br>
+ R U' R U R U R U' R' U' R2 
+<br>
+ R2 U R U R' U' R' U' R' U R'
+<br>
+ M2 U M2 U2 M2 U M2 
+<br>
+ M2 U' M' U2 M2 U2 M' U M2 
+<br>
+</p>
+        <p class="keyhole" style="display:none;">Keyhole metodu, Fridrich F2L'ten önce öğrenilebilecek bir metoddur. Bu metodla sadece ilk iki katmanı çözmek mümkündür. Aynı çömez metodundaki gibi ilk katman yapılmaya başlanır; fakat son köşe yerleştirilmez. Bu köşeden yararlanılarak kenarların çoğu daha az hamle ile yerleştirilebilir.
+<br>
+Keyhole Metodunu İzle <br></p>
+        <p class="444" style="display:none;">
+        4x4x4 ve 5x5x5 çözerken kullandığımız yöntemde önce küpün ortalarını yapıyor, sonra kenarlarını eşleyip adeta bir 3x3x3 küp haline getirip o şekilde çözüyoruz; fakat parity dediğimiz durumlar da ortaya çıkabiliyor. İzlemek için linklere tıklayın.,
+        <br></p>
+        <p class="bld" style="display:none;">Bölüm 1 - Genel Giriş <br>
+
+T Perm: R U R' U' R' F R2 U' R' U' R U R' F' <br>
+
+L (aslinda J) Perm: R U' L' U R' U2 L U' L' U2 L
+<br>
+Köşe oryantasyonu saat yönüne çevirme: ( R U R' U') ( R U R' U') L' (U R U' R') (U R U' R') L
+<br>
+Köşe Oryantasyonu saat yönünün tersine: (U R U' R') (U R U' R')  L' ( R U R' U')( R U R' U') L
+<br>
+Kenar oryantasyonu : M' U M' U M' U2 M U M U M U2
+<br>
+
+
+Bölüm 2 - Köşe oryantasyonu
+<br>
+Burada amaç köşeleri, permütasyona hazır hale getirebilmek için düzgün oryantasyona sokmaktır. Bunun için saat yönüne ve saat yönünün tersine olmak üzere 2 farklı algoritma kullanılır. Sadece köşelerin kendi yerlerinde dönmesi hedeflenir. 
+<br>
+Köşe oryantasyonu saat yönüne çevirme: ( R U R' U') ( R U R' U') L' (U R U' R') (U R U' R') L
+<br>
+Köşe Oryantasyonu saat yönünün tersine: (U R U' R') (U R U' R')  L' ( R U R' U')( R U R' U') L
+<br>
+
+
+Bölüm 3 - Kenar oryantasyonu
+<br>
+Köşe oryantasyonunda olduğu gibi burada da permütasyona hazır hale getirmek için kenarların oryantasyonları değiştirilir. Karşılıklı oryantasyon değiştirme algoritması kullanılır.
+<br>
+Kenar oryantasyonu : M' U M' U M' U2 M U M U M U2
+<br>
+
+
+Bölüm 4 - Köşe permütasyonu
+<br>
+Oryantasyonu düzeltilmiş köşeleri L perm ile kendi yerlerine koyarak köşelerin tamamlanması amaçlanır.
+ <br>
+L (aslinda J) Perm: R U' L' U R' U2 L U' L' U2 L
+
+<br>
+
+Bölüm 5 - Kenar permütasyonu
+<br>
+T perm kullanılarak son aşama olan kenar permütasyonu ile kenarlar da kendi yerlerine oturtulup bitirilir.
+<br>
+Parity durumunda (tek sayıda köşe algoritması kullanıldığı zaman) basitçe iki kenarın yeri sanki aralarında değişikmiş gibi düşünülerek ezberlenir. Köşe permütasyonunun ardından zaten değişeceği için basitçe işin içinden çıkılmış olur.
+<br>
+
+
+Bölüm 6 - Örnek Çözüm ve Ezber videosu
+<br>
+karıştırma: L2 R2 U2 L2 R2 B2 D F2 D' R2 D2 L R' D' B U B' F L B L'
+<br>
+Kenar permütasyonu ezberde harfleri kelimelere dökerken  W-X-Z-Y sıralamasını W-X-Y-Z olarak yazmışım ama çözüm sırasında doğru olarak çözdüm. Kusura bakmayın.
+<br>
+</p>
+        <p class="222" style="display:none;">Burada anlatılan 2x2x2 metodunu Ortega metodudur. 
+Önce ilk katman permütasyonu düşünülmeden yapılır. Sonra ikinci katmanın oryantasyonu da yapılıp iki katmanın birden permütasyonu yapılır. <br>
+Çok kolay olmakla beraber sizi rahatlıkla 10 saniyenin altına indirebilir.</p>
+        <p class="f2l" style="display:none;">F2L, yani First 2 Layers, ilk iki katmanı çözerken önce birinci sonra ikinci katmanı çözmek yerine iki katmanı da tek seferde çözmemizi sağlar. Bunu yaparken önce köşeler kenarlarıyla eşlenir ve sonra yerlerine beraber yerleştirilir.
+<br>
+F2L Videosunu İzle
+<br>
+
+F2L'nin temellerini öğrenip ustalaştıktan sonra da zamanlarınızı ve hamlelerinizi azaltmak için ileri düzey F2L videosunu izlemenizi tavsiye ederim. (30 saniye ve altı averaj için tavsiye ederim)
+<br>
+İleri Düzey F2L Videosunu İzle</p>
+        <p class="oll" style="display:none;">
+        Web sayfasındaki resimleri ve algoritmaları kullanmamıza izin veren Bob Burton'a teşekkür ediyoruz. Onun sitesine de www.cubewhiz.com adresinden erişebiliriniz.
+        </p>
+        <p class="pll" style="display:none;">
+        Web sayfasındaki resimleri ve algoritmaları kullanmamıza izin veren Bob Burton'a teşekkür ediyoruz. Onun sitesine de www.cubewhiz.com adresinden erişebiliriniz.
+        </p>
+    </div>
+</div>
+
+
+<footer>
+</footer>
+
+
+
+</div>
+
+
 </body>
 </html>

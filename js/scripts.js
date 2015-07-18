@@ -1,53 +1,47 @@
-function cozumdown(){$(".navbar-cozumler").slideDown();}
-function cozumup(){$(".navbar-cozumler").slideUp();}
-function fridrichdown(){$(".subfridrich").slideDown();}
-function fridrichup(){$(".subfridrich").slideUp();}
 function displaynone(){
-    $(".content").children("p").css('display','none');
+    $(".content").children("p").slideUp('slow');
 }
-function anasayfa(){
-    cozumup();
-    fridrichup();
-    displaynone();
-        $(".content").children("p.anasayfa").css('display','block');
-}
+function anasayfa(){  
+    $(".content").children("p.anasayfa").slideDown('slow',displaynone());}
 function cevirici(){
-    cozumup();
-    fridrichup();
     displaynone();
-    $(".content").children(".ceviriciler").css('display','block');}
+    $(".content").children(".ceviriciler").slideDown('slow',displaynone());}
 function comez(){
-    fridrichup();
     displaynone();
-    $(".content").children("p.comez").css('display','block');}
+    $(".content").children("p.comez").slideDown('slow',displaynone());}
 function boll(){
-    fridrichup();
     displaynone();
-    $(".content").children("p.basitoll").css('display','block');}
+    $(".content").children("p.basitoll").slideDown('slow',displaynone());}
 function keyhole(){
-    fridrichup();
     displaynone();
-    $(".content").children("p.keyhole").css('display','block');}
+    $(".content").children("p.keyhole").slideDown('slow',displaynone());}
 function a444(){
-    fridrichup();
     displaynone();
-    $(".content").children("p.444").css('display','block');}
+    $(".content").children("p.444").slideDown('slow',displaynone());}
 function bld(){
-    fridrichup();
     displaynone();
-    $(".content").children("p.bld").css('display','block');}
+    $(".content").children("p.bld").slideDown('slow',displaynone());}
 function a222(){
-    fridrichup();
     displaynone();
-    $(".content").children("p.222").css('display','block');}
+    $(".content").children("p.222").slideDown('slow',displaynone());}
 function f2l(){
     displaynone();
-    $(".content").children("p.f2l").css('display','block');}
+    $(".content").children("p.f2l").slideDown('slow',displaynone());}
 function oll(){
     displaynone();
-    $(".content").children("p.oll").css('display','block');}
+    $(".content").children("p.oll").slideDown('slow',displaynone());}
 function pll(){
     displaynone();
-    $(".content").children("p.pll").css('display','block');}
-
-anasayfa();
+    $(".content").children("p.pll").slideDown('slow',displaynone());}
+function forum(){
+    $("html").fadeOut();                  
+    window.location.replace("http://www.speedcubingtr.com/forum/");
+}
+function goback(){
+    $("html").fadeOut();  
+    history.go(-1);
+}
+function giris(){
+    $("html").fadeOut();
+    window.location.replace("http://www.speedcubingtr.com/forum/index.php?action=login");
+}
