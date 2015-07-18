@@ -84,7 +84,7 @@ nav li li.dropdown > a {
     background-position:right 16px;
     background-repeat:no-repeat;
 }
-div.content p{
+div.content div{
     display: none;
 }
 

@@ -90,166 +90,1291 @@ $(window).scroll(function () {
 
 <div id="main">
     <div class="content" style="padding-right: 10%;">
-        <p class="anasayfa">Giriş: <br>
-Rubik küpünü çözmenin birçok yolu vardır. Bu sitede katman katman çözmenin basit ve gelişmiş yöntemleri olan çömez (beginner's) ve Fridrich yönteminin yazılı ve görüntülü, en önemlisi de Türkçe anlatımlarını bulabilirsiniz. Çömez yöntemini kullanarak kısa bir süre içinde 1 dakika gibi ortalamalara erişebilirsiniz. Tavsiye edilen öğrenme sırasını sayfanın altında bulabilirsiniz. <br>
+        <div class="anasayfa"><u><b>Giriş:</b></u>
+Rubik küpünü çözmenin birçok yolu vardır. Bu sitede katman katman çözmenin basit ve gelişmiş yöntemleri olan çömez (beginner's) ve Fridrich yönteminin yazılı ve görüntülü, en önemlisi de Türkçe anlatımlarını bulabilirsiniz. Çömez yöntemini kullanarak kısa bir süre içinde 1 dakika gibi ortalamalara erişebilirsiniz. Tavsiye edilen öğrenme sırasını sayfanın altında bulabilirsiniz.
 
-3x3x3 Rubik Küpünün Mekanizması: <br>
+<u><b>3x3x3 Rubik Küpünün Mekanizması:</b></u>
 3x3x3 Rubik Küpünde 12 kenar, 8 köşe ve 6 orta (merkez) parçası olmak üzere 26 parça vardır. Yapılan hiçbir hamle merkez parçaların yerlerinde bir değişikliğe neden olmaz. Bu nedenle hangi yüzde hangi rengin olacağını ortadaki renge bakarak belirleyebiliriz.
-<br>
-Notasyon: <br>
-Herhangi bir yöntemi öğrenmeye başlamadan önce notasyon bilgisine sahip olmak gerekir. WorldCubeAssociation'un yayınladığı resmi notasyon şu şekildedir: <br>
-U (Up) - Üst Katman <br>
-R (Right) - Sağ Katman <br>
-L (Left) - Sol Katman <br>
-B (Back) - Arka Katman <br>
-D (Down) - Aşağı Katman <br>
-F (Front) - Ön Katman <br>
 
-Notasyonun Uygulanması: <br>
+<u><b>Notasyon:</b></u>
+Herhangi bir yöntemi öğrenmeye başlamadan önce notasyon bilgisine sahip olmak gerekir. WorldCubeAssociation'un yayınladığı resmi notasyon şu şekildedir:
+<li>U (<u>U</u>p) - Üst Katman</li><li>R (<u>R</u>ight) - Sağ Katman</li><li>L (<u>L</u>eft) - Sol Katman</li><li>B (<u>B</u>ack) - Arka Katman</li><li>D (<u>D</u>own) - Aşağı Katman</li><li>F (<u>F</u>ront) - Ön Katman</li>
+<u><b>Notasyonun Uygulanması:</b></u>
 Bir hamle yaparken her zaman küpün o yüzüne bakıyormuşçasına yapmak gerekir. Örneğin U, küpün üst yüzünü 90 derece saat yönünde döndür anlamına gelir. U ters, veya U', üst yüzün 90 derece saat yönünün tersinde hareket ettirilmesini gerektirir. U2 de yön fark etmeksizin üst katmanı 180 derece döndürmek demektir. Örnek olarak R hamlesi sağ katmanı ileri doğru hareket ettırmeyı gerektirirken L hamlesi sol katmanı bize doğru döndürmeyi gerektirir; çünkü her hamle o yüze bakarken yapılır. sağ katmanı saat yönünde döndürmekle sol katmanı saat yönünde döndürmek ters yönlere doğru hareket ettirmek demektir.
-<br>
-Ayrıca bilinmesi tavsiye edilen diğer notasyonlar: <br>
-Herhangi bir harfin sonuna gelen "w" harfi, çift katman hareketi demektir. örneğin Rw, hem R hem de orta katmanın beraber hareket ettirilmesini gerektirir. <br>
-4x4x4 ve 5x5x5 küplerde gecen küçük harfli notasyonlar (örneğin r) o katman sabit kalacak şekilde onun bir yanındaki katmanın hareket ettirilmesini gerektirir. (r = Rw + R') <br>
-M (Middle) - Sol ve sağ katman arasında kalan orta katmanı hareket ettirme. <br>
-E (Equator) - Üst ve alt katman arasında kalan ekvator katmanını hareket ettirme. <br>
-S (Slice) - Ön ve arka katman arasında kalan katmanı hareket ettirme. <br>
-x - Küpte herhangi bir hamle yapmadan küpü x ekseni etrafında döndürme. <br>
-y - Küpte herhangi bir hamle yapmadan küpü y ekseni etrafında döndürme. <br>
-z - Küpte herhangi bir hamle yapmadan küpü z ekseni etrafında döndürme. <br>
 
-Daha fazla bilgi için: http://www.worldcubeassociation.org/regulations/#notation
-</p>
-        <p class="comez" style="display:none;">Çömez metodu, Rubik küpünü çözmeyi ilk kez öğrenenler için önerilen bir metoddur; fakat bu metodu çok uzun süre kullanmak tavsiye edilmez. Bu metod sadece Rubik küpünün ne olduğunu az çok kavramaktır. Daha gelişmiş metodlara bir geçiş niteliğindedir. <br>
+<u><b>Ayrıca bilinmesi tavsiye edilen diğer notasyonlar:</b></u>
+<li>Herhangi bir harfin sonuna gelen "w" harfi, çift katman hareketi demektir. örneğin Rw, hem R hem de orta katmanın beraber hareket ettirilmesini gerektirir.</li><li>4x4x4 ve 5x5x5 küplerde gecen küçük harfli notasyonlar (örneğin r) o katman sabit kalacak şekilde onun bir yanındaki katmanın hareket ettirilmesini gerektirir. (r = Rw + R')</li><li>M (<u>M</u>iddle) - Sol ve sağ katman arasında kalan orta katmanı hareket ettirme.</li><li>E (<u>E</u>quator) - Üst ve alt katman arasında kalan ekvator katmanını hareket ettirme.</li><li>S (<u>S</u>lice) - Ön ve arka katman arasında kalan katmanı hareket ettirme.</li><li>x - Küpte herhangi bir hamle yapmadan küpü x ekseni etrafında döndürme.</li><li>y - Küpte herhangi bir hamle yapmadan küpü y ekseni etrafında döndürme.</li><li>z - Küpte herhangi bir hamle yapmadan küpü z ekseni etrafında döndürme.</li><br>Daha fazla bilgi için: <a href="http://www.worldcubeassociation.org/regulations/#notation" target="_blank">http://www.worldcubeassociation.org/regulations/#notation</a>
+</div>
+        <div class="ceviriciler" style="display:none;">Çeviriciler, (İngilizce ismiyle commutators) hem küpü biraz daha anlamanızı sağlayacak, hem de kendi algoritmalarınızı üretmenize yardım edecek bir kavram. İzlemek için aşağıdaki linke tıklayın.
 
-Bölüm 1 - İzle <br>
+<li><a href="javascript:void(window.open('http://www.youtube.com/embed/v6SHfID1S7o', 'Directory', 'width=360, height=338'));"><b style="font-size:16px">Çeviricileri İzle</b></a></li>
+</div>
+        <div class="comez" style="display:none">Çömez metodu, Rubik küpünü çözmeyi ilk kez öğrenenler için önerilen bir metoddur; fakat bu metodu çok uzun süre kullanmak tavsiye edilmez. Bu metod sadece Rubik küpünün ne olduğunu az çok kavramaktır. Daha gelişmiş metodlara bir geçiş niteliğindedir.
 
-Bölüm 2 - İzle <br>
+<li><a href="javascript:void(window.open('http://www.youtube.com/embed/OnWTZSCs4hg', 'Directory', 'width=360, height=338'));"><b>Bölüm 1 - İzle</b></a></li>
+<li><a href="javascript:void(window.open('http://www.youtube.com/embed/3sWyQBYr_IQ', 'Directory', 'width=360, height=338'));"><b>Bölüm 2 - İzle</b></a></li>
 
+<b>Algoritmalar:</b><br>
+<li> U R U' R' U' F' U F </li>
+<li> U' L' U L U F U' F' </li>
+<li> F R U R' U' F' </li>
+<li> R U R' U R U2 R' </li>
+<li> U R U' L' U R' U' L </li>
+<li> R' D' R D </li></div>
+        <div class="basitoll" style="display:none;"><img src="http://www.speedcubingtr.com/f2l-oll.gif">
+<img src="http://www.speedcubingtr.com/oll-solved.gif">
+<br><br><a href="javascript:void(window.open('http://www.youtube.com/embed/8-_dJLIimuQ', 'Directory', 'width=360, height=240'));">OLL videosunu izle</a><br><br><br><br><br><br><br><br><br><a href="javascript:void(window.open('http://www.youtube.com/embed/dNXpcZPZFSs', 'Directory', 'width=360, height=240'));">PLL videosunu izle</a><br><br><br><br><br>
 
-Algoritmalar: <br>
+<b>OLL</b>
+<li> R U R' U R U2 R' </li>
+<li> R U2 R' U' R U' R' </li>
+<li> R U R' U R U' R' U R U2 R' </li>
+<li> R U2 R2 U' R2 U' R2 U2 R </li>
+<li> Lw' U' L U R U' Rw' F </li>
+<li> R2 D R' U2 R D' R' U2 R' </li>
+<li> R' F R B' R' F' R B </li>
 
- U R U' R' U' F' U F <br> 
+<b>PLL</b>
+<li> F R U' R' U' R U R' F' R U R' U' R' F R F' </li>
+<li> R U R' U' R' F R2 U' R' U' R U R' F' </li>
+<li> R U' R U R U R U' R' U' R2 </li>
+<li> R2 U R U R' U' R' U' R' U R'</li>
+<li> M2 U M2 U2 M2 U M2 </li>
+<li> M2 U' M' U2 M2 U2 M' U M2 </li>
+</div>
+        <div class="keyhole" style="display:none;">Keyhole metodu, Fridrich F2L'ten önce öğrenilebilecek bir metoddur. Bu metodla sadece ilk iki katmanı çözmek mümkündür. Aynı çömez metodundaki gibi ilk katman yapılmaya başlanır; fakat son köşe yerleştirilmez. Bu köşeden yararlanılarak kenarların çoğu daha az hamle ile yerleştirilebilir.
 
- U' L' U L U F U' F' <br>
+<li><a href="javascript:void(window.open('http://www.youtube.com/embed/Yi6PpNiOvYU', 'Directory', 'width=360, height=338'));"><b>Keyhole Metodunu İzle</b></a></li>
 
- F R U R' U' F' <br>
+<img src="http://www.speedcubingtr.com/imagecube.php?n=3&stickers=xxxxxxxrxxgxxrxbbxxxxxgxxrr&size=75">
 
- R U R' U R U2 R' <br>
-
- U R U' L' U R' U' L <br>
-
- R' D' R D <br></p>
-        <p class="ceviriciler" style="display:none;">Çeviriciler, (İngilizce ismiyle commutators) hem küpü biraz daha anlamanızı sağlayacak, hem de kendi algoritmalarınızı üretmenize yardım edecek bir kavram. İzlemek için aşağıdaki linke tıklayın.
-<br><br>
-Çeviricileri İzle</p>
-        <p class="basitoll" style="display:none;">OLL <br>
- R U R' U R U2 R' <br>
-
- R U2 R' U' R U' R' 
-<br>
- R U R' U R U' R' U R U2 R' 
-<br>
- R U2 R2 U' R2 U' R2 U2 R 
-<br>
- Lw' U' L U R U' Rw' F 
-<br>
- R2 D R' U2 R D' R' U2 R' 
-<br>
- R' F R B' R' F' R B 
-<br>
-
-PLL <br>
- F R U' R' U' R U R' F' R U R' U' R' F R F' 
-<br>
- R U R' U' R' F R2 U' R' U' R U R' F' 
-<br>
- R U' R U R U R U' R' U' R2 
-<br>
- R2 U R U R' U' R' U' R' U R'
-<br>
- M2 U M2 U2 M2 U M2 
-<br>
- M2 U' M' U2 M2 U2 M' U M2 
-<br>
-</p>
-        <p class="keyhole" style="display:none;">Keyhole metodu, Fridrich F2L'ten önce öğrenilebilecek bir metoddur. Bu metodla sadece ilk iki katmanı çözmek mümkündür. Aynı çömez metodundaki gibi ilk katman yapılmaya başlanır; fakat son köşe yerleştirilmez. Bu köşeden yararlanılarak kenarların çoğu daha az hamle ile yerleştirilebilir.
-<br>
-Keyhole Metodunu İzle <br></p>
-        <p class="444" style="display:none;">
-        4x4x4 ve 5x5x5 çözerken kullandığımız yöntemde önce küpün ortalarını yapıyor, sonra kenarlarını eşleyip adeta bir 3x3x3 küp haline getirip o şekilde çözüyoruz; fakat parity dediğimiz durumlar da ortaya çıkabiliyor. İzlemek için linklere tıklayın.,
-        <br></p>
-        <p class="bld" style="display:none;">Bölüm 1 - Genel Giriş <br>
-
-T Perm: R U R' U' R' F R2 U' R' U' R U R' F' <br>
-
-L (aslinda J) Perm: R U' L' U R' U2 L U' L' U2 L
-<br>
-Köşe oryantasyonu saat yönüne çevirme: ( R U R' U') ( R U R' U') L' (U R U' R') (U R U' R') L
-<br>
-Köşe Oryantasyonu saat yönünün tersine: (U R U' R') (U R U' R')  L' ( R U R' U')( R U R' U') L
-<br>
-Kenar oryantasyonu : M' U M' U M' U2 M U M U M U2
-<br>
+R U' =>
 
 
-Bölüm 2 - Köşe oryantasyonu
-<br>
-Burada amaç köşeleri, permütasyona hazır hale getirebilmek için düzgün oryantasyona sokmaktır. Bunun için saat yönüne ve saat yönünün tersine olmak üzere 2 farklı algoritma kullanılır. Sadece köşelerin kendi yerlerinde dönmesi hedeflenir. 
-<br>
-Köşe oryantasyonu saat yönüne çevirme: ( R U R' U') ( R U R' U') L' (U R U' R') (U R U' R') L
-<br>
-Köşe Oryantasyonu saat yönünün tersine: (U R U' R') (U R U' R')  L' ( R U R' U')( R U R' U') L
-<br>
+
+<img src="http://www.speedcubingtr.com/imagecube.php?n=3&stickers=xxxxxrxxxxxxxrwbbwxgxrgxrxx&size=75">
+
+R' =>
 
 
-Bölüm 3 - Kenar oryantasyonu
-<br>
-Köşe oryantasyonunda olduğu gibi burada da permütasyona hazır hale getirmek için kenarların oryantasyonları değiştirilir. Karşılıklı oryantasyon değiştirme algoritması kullanılır.
-<br>
-Kenar oryantasyonu : M' U M' U M' U2 M U M U M U2
-<br>
+
+<img src="http://www.speedcubingtr.com/imagecube.php?n=3&stickers=xxxxxxxxxxxxxrrbbxxxxggxxrr&size=75">
+
+D' =>
 
 
-Bölüm 4 - Köşe permütasyonu
-<br>
-Oryantasyonu düzeltilmiş köşeleri L perm ile kendi yerlerine koyarak köşelerin tamamlanması amaçlanır.
- <br>
-L (aslinda J) Perm: R U' L' U R' U2 L U' L' U2 L
 
-<br>
+<img src="http://www.speedcubingtr.com/imagecube.php?n=3&stickers=xxxxxxxxxxxxxrrxrrxxxggxggx&size=75"></div>
+        <div class="444" style="display:none;">
+        4x4x4 ve 5x5x5
+çözerken kullandığımız yöntemde önce küpün ortalarını yapıyor,
+sonra kenarlarını eşleyip adeta bir 3x3x3 küp haline getirip o şekilde çözüyoruz; 
+fakat parity dediğimiz durumlar da ortaya çıkabiliyor.
+ İzlemek için linklere tıklayın.
 
-Bölüm 5 - Kenar permütasyonu
-<br>
-T perm kullanılarak son aşama olan kenar permütasyonu ile kenarlar da kendi yerlerine oturtulup bitirilir.
-<br>
-Parity durumunda (tek sayıda köşe algoritması kullanıldığı zaman) basitçe iki kenarın yeri sanki aralarında değişikmiş gibi düşünülerek ezberlenir. Köşe permütasyonunun ardından zaten değişeceği için basitçe işin içinden çıkılmış olur.
-<br>
+<li><a href="javascript:void(window.open('http://www.youtube.com/embed/a96Aix6akAk', 'Directory', 'width=360, height=258'));"><b>4x4x4 Ortalar</b></a></li>
+<li><a href="javascript:void(window.open('http://www.youtube.com/embed/UApLnQx-ptA', 'Directory', 'width=360, height=258'));"><b>4x4x4 Kenarlar</b></a></li>
+<li><a href="javascript:void(window.open('http://www.youtube.com/embed/ZxP5nUjU9tA', 'Directory', 'width=360, height=258'));"><b>4x4x4 Parity</b></a></li>
 
+<li><a href="javascript:void(window.open('http://www.youtube.com/embed/XEmYb4hey-Q', 'Directory', 'width=360, height=338'));"><b>5x5x5 Ortalar</b></a></li>
+<li><a href="javascript:void(window.open('http://www.youtube.com/embed/xn8JvmnVH2s', 'Directory', 'width=360, height=338'));"><b>5x5x5 Kenarlar</b></a></li>
 
-Bölüm 6 - Örnek Çözüm ve Ezber videosu
-<br>
-karıştırma: L2 R2 U2 L2 R2 B2 D F2 D' R2 D2 L R' D' B U B' F L B L'
-<br>
+<b>Parity Algoritmaları:</b>
+<img src="http://www.speedcubingtr.com/imagecube.php?n=4&stickers=yyyyyyyyyyyyyrryryyrrrrrrrrrrrrrgggggggggggggggg&size=100">
+<img src="http://www.speedcubingtr.com/imagecube.php?n=4&stickers=yyyyyyyyyyyyyyyyrggrrrrrrrrrrrrrgrrggggggggggggg&size=100">
+
+<b>OLL Parity:</b> Rw2 B2 U2 Lw U2 Rw' U2 Rw U2 F2 Rw F2 Lw' B2 Rw2
+<b>PLL Parity:</b> r2 U2 r2 Uw2 r2 Uw2 U2</div>
+        <div class="bld" style="display:none;"><a href="javascript:void(window.open('http://www.youtube.com/embed/2eYkxAAusNw', 'Directory', 'width=1280, height=720'));"><b>Bölüm 1 - Genel Giriş</b></a><br>
+T Perm: R U R' U' R' F R2 U' R' U' R U R' F'<br>
+L (aslinda J) Perm: R U' L' U R' U2 L U' L' U2 L<br>
+Köşe oryantasyonu saat yönüne çevirme: ( R U R' U') ( R U R' U') L' (U R U' R') (U R U' R') L<br>
+Köşe Oryantasyonu saat yönünün tersine: (U R U' R') (U R U' R')  L' ( R U R' U')( R U R' U') L<br>
+Kenar oryantasyonu : M' U M' U M' U2 M U M U M U2<br><br>
+
+<a href="javascript:void(window.open('http://www.youtube.com/embed/vftQYIBqITQ', 'Directory', 'width=1280, height=720'));"><b>Bölüm 2 - Köşe oryantasyonu</b></a><br>
+Burada amaç köşeleri, permütasyona hazır hale getirebilmek için düzgün oryantasyona sokmaktır. Bunun için saat yönüne ve saat yönünün tersine olmak üzere 2 farklı algoritma kullanılır. Sadece köşelerin kendi yerlerinde dönmesi hedeflenir. <br>
+Köşe oryantasyonu saat yönüne çevirme: ( R U R' U') ( R U R' U') L' (U R U' R') (U R U' R') L<br>
+Köşe Oryantasyonu saat yönünün tersine: (U R U' R') (U R U' R')  L' ( R U R' U')( R U R' U') L<br><br>
+
+<a href="javascript:void(window.open('http://www.youtube.com/embed/VHSEB8Setkw', 'Directory', 'width=1280, height=720'));"><b>Bölüm 3 - Kenar oryantasyonu</b></a><br>
+Köşe oryantasyonunda olduğu gibi burada da permütasyona hazır hale getirmek için kenarların oryantasyonları değiştirilir. Karşılıklı oryantasyon değiştirme algoritması kullanılır.<br>
+Kenar oryantasyonu : M' U M' U M' U2 M U M U M U2<br><br>
+
+<a href="javascript:void(window.open('http://www.youtube.com/embed/0egnPvdxN98', 'Directory', 'width=1280, height=720'));"><b>Bölüm 4 - Köşe permütasyonu</b></a><br>
+Oryantasyonu düzeltilmiş köşeleri L perm ile kendi yerlerine koyarak köşelerin tamamlanması amaçlanır.<br> 
+L (aslinda J) Perm: R U' L' U R' U2 L U' L' U2 L<br><br>
+
+<a href="javascript:void(window.open('http://www.youtube.com/embed/pgXB4AEQ1Co', 'Directory', 'width=1280, height=720'));"><b>Bölüm 5 - Kenar permütasyonu</b></a><br>
+T perm kullanılarak son aşama olan kenar permütasyonu ile kenarlar da kendi yerlerine oturtulup bitirilir.<br>
+Parity durumunda (tek sayıda köşe algoritması kullanıldığı zaman) basitçe iki kenarın yeri sanki aralarında değişikmiş gibi düşünülerek ezberlenir. Köşe permütasyonunun ardından zaten değişeceği için basitçe işin içinden çıkılmış olur.<br><br>
+
+<a href="javascript:void(window.open('http://www.youtube.com/embed/SDwU9PZ_3Og', 'Directory', 'width=1280, height=720'));"><b>Bölüm 6 - Örnek Çözüm ve Ezber videosu</b></a><br>
+karıştırma: L2 R2 U2 L2 R2 B2 D F2 D' R2 D2 L R' D' B U B' F L B L'<br>
 Kenar permütasyonu ezberde harfleri kelimelere dökerken  W-X-Z-Y sıralamasını W-X-Y-Z olarak yazmışım ama çözüm sırasında doğru olarak çözdüm. Kusura bakmayın.
-<br>
-</p>
-        <p class="222" style="display:none;">Burada anlatılan 2x2x2 metodunu Ortega metodudur. 
-Önce ilk katman permütasyonu düşünülmeden yapılır. Sonra ikinci katmanın oryantasyonu da yapılıp iki katmanın birden permütasyonu yapılır. <br>
-Çok kolay olmakla beraber sizi rahatlıkla 10 saniyenin altına indirebilir.</p>
-        <p class="f2l" style="display:none;">F2L, yani First 2 Layers, ilk iki katmanı çözerken önce birinci sonra ikinci katmanı çözmek yerine iki katmanı da tek seferde çözmemizi sağlar. Bunu yaparken önce köşeler kenarlarıyla eşlenir ve sonra yerlerine beraber yerleştirilir.
-<br>
-F2L Videosunu İzle
-<br>
+
+</div>
+        <div class="222" style="display:none;">Burada anlatılan 2x2x2 metodunu Ortega metodudur. 
+Önce ilk katman permütasyonu düşünülmeden yapılır. Sonra ikinci katmanın oryantasyonu da yapılıp iki katmanın birden permütasyonu yapılır.
+Çok kolay olmakla beraber sizi rahatlıkla 10 saniyenin altına indirebilir.
+
+<li><a href="javascript:void(window.open('http://www.youtube.com/embed/YTIWLQ7_YSA', 'Directory', 'width=360, height=258'));"><b>2x2x2 Ortega Metodu</b></a></li>
+
+<b>Algoritmalar:</b>
+
+<b>OLL:</b> (son katmanın oryantasyonu)
+
+<img src="http://www.speedcubingtr.com/http://www.speedcubingtr.com/imagecube.php?n=2&size=76&stickers=xyxyxxrrxxyy">
+F (R U R' U') F'
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://www.speedcubingtr.com/imagecube.php?n=2&size=75&stickers=xyxyyxrrxxyy">
+(R U R' U') (R' F R F')
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://www.speedcubingtr.com/imagecube.php?n=2&size=75&stickers=yxxyyxrrxygg">
+F (R U') (R' U' R U) (R' F')
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://www.speedcubingtr.com/imagecube.php?n=2&size=75&stickers=xxyxxyrrxygg">
+(R U R') U2 (R U2 R')
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://www.speedcubingtr.com/imagecube.php?n=2&size=75&stickers=xyxxyxrryxgg">
+(R U2 R') U' (R U' R')
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://www.speedcubingtr.com/imagecube.php?n=2&size=75&stickers=xxxxyyrrxxgg">
+R2 U2 R U2 R2
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://www.speedcubingtr.com/imagecube.php?n=2&size=75&stickers=xxxxyyrrxygg">
+(R' F) (R2 U' R2) (F R)
+
+
+
+
+
+
+<b>PBL:</b> (her iki katmanın permütasyonu)
+
+<img src="http://www.speedcubingtr.com/http://www.speedcubingtr.com/imagecube.php?n=2&size=75&stickers=yyyyggrrobgo">
+(R2 U R2 U2) y' (R2 U R2)
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://www.speedcubingtr.com/imagecube.php?n=2&size=75&stickers=yyyyoogbbrro">
+(R U' R) F2 (R' U R')
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://www.speedcubingtr.com/imagecube.php?n=2&size=75&stickers=yyyyorgbgbro">
+R2 F2 R2
+
+
+
+
+
+
+
+İlk katmanın çözülü olduğu durumlar için gereken 2 PLL yi Fridrich PLL sayfasında bulabilirsiniz.
+
+
+
+
+
+</div>
+        <div class="f2l" style="display:none;">
+            F2L, yani First 2 Layers, ilk iki katmanı çözerken önce birinci sonra ikinci katmanı çözmek yerine iki katmanı da tek seferde çözmemizi sağlar. Bunu yaparken önce köşeler kenarlarıyla eşlenir ve sonra yerlerine beraber yerleştirilir.
+
+<li><a href="javascript:void(window.open('http://www.youtube.com/embed/W_J6cfywdts', 'Directory', 'width=360, height=240'));"><b>F2L Videosunu İzle</b></a></li>
 
 F2L'nin temellerini öğrenip ustalaştıktan sonra da zamanlarınızı ve hamlelerinizi azaltmak için ileri düzey F2L videosunu izlemenizi tavsiye ederim. (30 saniye ve altı averaj için tavsiye ederim)
-<br>
-İleri Düzey F2L Videosunu İzle</p>
-        <p class="oll" style="display:none;">
-        Web sayfasındaki resimleri ve algoritmaları kullanmamıza izin veren Bob Burton'a teşekkür ediyoruz. Onun sitesine de www.cubewhiz.com adresinden erişebiliriniz.
-        </p>
-        <p class="pll" style="display:none;">
-        Web sayfasındaki resimleri ve algoritmaları kullanmamıza izin veren Bob Burton'a teşekkür ediyoruz. Onun sitesine de www.cubewhiz.com adresinden erişebiliriniz.
+
+<li><a href="javascript:void(window.open('http://www.youtube.com/embed/5b9GuaJGcHs', 'Directory', 'width=360, height=240'));"><b>İleri Düzey F2L Videosunu İzle</b></a></li>
+
+F2L Algoritmaları:
+
+<u><b>Kenar ve köşe U katmanında:</b></u>
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxxxbxxbxxwbbxbbxrrxxrrxrr">
+U R U' R'
+R' F R F'
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxxxxxrrxbbbbxbbxwxxxrrxrr">
+F R' F' R
+U' F' U F
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xbxxxxxxrxxbbbxbbxwxxxrrxrr">
+R U R'
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxbxxxxrxxbbbxbbxwxxxrrxrr">
+U' R U R' U R U R'
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxxxbxxrxxbbbxbbxwrxxrrxrr">
+U' R U' R' U R U R'
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxrxxxxbxxwbbxbbxrxxxrrxrr">
+F' U' F
+y' R' U' R
+y L'U' L
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xrxxxxxxrxxbbbxbbxwxxxrrxrr">
+y' U R' U2 R U2 R' U R
+Rw' U2 R2 U R2 U Rw
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxrxxxxrxxbbbxbbxwxxxrrxrr">
+y' U R' U' R U2 R' U R
+U' Rw U' R' U R U Rw'
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxbxxxxbxxwbbxbbxrxxxrrxrr">
+U' R U2 R' U2 R U' R'
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xbxxxxxxbxxwbbxbbxrxxxrrxrr">
+U' R U R' U2 R U' R'
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxxxxxbbxrwbbxbbxrxxxrrxrr">
+R B L U' L' B' R' (Lw U Rw U' Rw' U' Lw' veya Lw U L F' L' U' Lw')
+R U R' U2 R U' R' U R U' R'
+U R'F R F' U R U R'
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxxxrxxrxxbbbxbbxwbxxrrxrr">
+R U' R' U2 y' R' U' R
+y M U' R' F R U M'
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxxxbxxrxxbbbxbbxwrxxrrxrr">
+U' R U' R' U R U R'
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxxxxxrbxbwbbxbbxrxxxrrxrr">
+y' U R' U R U' R' U' R
+R U' R' U R' F R F' R U' R'
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xrxxxxxxbxxwbbxbbxrxxxrrxrr">
+y' U R' U' R U' R' U' R
+U Rw U R' U' Rw' R2 U' R'
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxxxrxxbxxwbbxbbxrbxxrrxrr">
+U' R U2 R' U y' R' U' R
+R U' R' U R U' R2' F R F' R U' R'
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxxxbxxwxxrbbxbbxbrxxrrxrr">
+R U2 R' U' R U R'
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxxxxxrwxbrbbxbbxbxxxrrxrr">
+R' F R F' R U' R' U R U' R'
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xbxxxxxxwxxrbbxbbxbxxxrrxrr">
+U R U2 R' U R U' R'
+U R U2 R2 F R F'
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxbxxxxwxxrbbxbbxbxxxrrxrr">
+U2 R U R' U R U' R'
+U2 R U R2 F R F'
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxrxxxxwxxrbbxbbxbxxxrrxrr">
+U' R U' R2 F R F' R U' R'
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xrxxxxxxwxxrbbxbbxbxxxrrxrr">
+Rw U' Rw' U2' Rw U Rw'
+F' L' U2' L F
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxxxxxbwxrrbbxbbxbxxxrrxrr">
+U2 R2 U2' R' U' R U' R2
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxxxrxxwxxrbbxbbxbbxxrrxrr">
+U' R U R2 F R F' R U' R'
+
+
+
+
+
+
+<b><u>Sadece kenar U katmanında:</u></b>
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxxxxxrxxbxbbxbbbxxxxrrrrr">
+U R U' R' U' F' U F
+y' R U R U R U' R' U' R' (son katman kenar ve köşe oryantasyonunu bozmaz)
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxxxbxxxxxxbbxbbbxrxxrrrrr">
+y U' L' U L U F U' F'
+R' U' R' U' R' U R U R
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxxxxxrxxbxbbxbbrxxxxrrwrr">
+R U2 R' y' R' U2 R
+y' R' U R U' R' U R
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxxxbxxxxxxbbxbbrxrxxrrwrr">
+R U R' U' R U R'
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxxxbxxxxxxbbxbbwxrxxrrbrr">
+R U' R' U R U' R'
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxxxxxrxxbxbbxbbwxxxxrrbrr">
+U2 R U' R' y' R' U' R
+R' F R F' U R U' R'
+
+
+
+
+
+<b><u>Sadece köşe U katmanında:</u></b>
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxxxxxxwxxrbbbbbxbxxrrrxrr">
+R U R' U' R U R' U' R U R'
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxxxxxxrxxbbbbbbxwxxrrrxrr">
+U R U R' U2 R U R'
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxxxxxxbxxwbbbbbxrxxrrrxrr">
+U' R U' R' U2 R U' R'
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxxxxxxwxxrbbrbbxbxxbrrxrr">
+R U' R' y' R' U2 R
+U' R' F R F' R U' R'
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxxxxxxrxxbbbrbbxwxxbrrxrr">
+R2 Uw R U R' U' Uw' R' U R'
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxxxxxxbxxwbbrbbxrxxbrrxrr">
+U' R U R' U y' R' U' R
+
+
+
+
+
+
+<b><u>Ne kenar ne de köşe U katmanında:</u></b>
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxxxxxxxxxxbbbbbrxxxrrrwrr">
+R U2 R U R' U R U2 R2
+`
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxxxxxxxxxxbbbbbwxxxrrrbrr">
+R U R' U' R U2 R' U' R U R'
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxxxxxxxxxxbbrbbwxxxbrrbrr">
+R U' R U y R U' R' F2
+F' L' U2' L F R U R'
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxxxxxxxxxxbbrbbrxxxbrrwrr">
+R2 y R U R' U' y' R' U R'
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/http://speedcubingtr.com/imagecube.php?size=76&stickers=xxxxxxxxxxxxbbrbbbxxxbrrrrr">
+Rw' U' R2 U' R2 U2 Rw
+R U' R' U y' R' U2 R U2 R' U R
+        </div>
+        <div class="oll" style="display:none;">
+        Web sayfasındaki resimleri ve algoritmaları kullanmamıza izin veren Bob Burton'a teşekkür ediyoruz. Onun sitesine de <a href="http://www.cubewhiz.com">www.cubewhiz.com</a> adresinden erişebiliriniz.
+
+<b><u>Bütün köşelerin doğru olduğu durumlar:</u></b>
+
+<img src="http://www.speedcubingtr.com/images/oll01.gif">
+(M' U M) U2 (M' U M)
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll02.gif">
+(R U R' U') (M' U R U') Rw'
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll03.gif">
+(M U) (R U R' U') (M2 U) (R U') Rw'
+
+
+
+
+
+
+<b><u>Bütün kenarların doğru olduğu durumlar:</u></b>
+
+<img src="http://www.speedcubingtr.com/images/oll04.gif">
+(R'2 D) (R' U2) (R D') (R' U2 R')
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll05.gif">
+(Lw' U') (L U) (R U') (Rw' F)
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll06.gif">
+(R' F) (R B') (R' F') (R B)
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll07.gif">
+(R U R' U) (R U'2 R')
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll08.gif">
+(R U2 R') (U' R U' R')
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll09.gif">
+(R U'2) (R'2 U') (R2 U') (R'2 U'2 R)
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll10.gif">
+(R U R' U) (R U' R' U) (R U2 R')
+
+
+
+
+
+
+<b><u>Hiçbir kenarın doğru olmadığı durumlar:</u></b>
+
+<img src="http://www.speedcubingtr.com/images/oll11.gif">
+Fw (R U R' U') Fw' U' F (R U R' U') F'
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll12.gif">
+Fw (R U R' U') Fw' U F (R U R' U') F'
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll13.gif">
+(R U R' U) (R' F R F') U2 (R' F R F')
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll14.gif">
+(R' U2) F (R U R' U') y' (R'2 U2) (R B)
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll15.gif">
+F (R U R' U) y' (R' U2) (R' F R F')
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll16.gif">
+F (R U R' U') S (R U R' U') Fw'
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll17.gif">
+(R U2) (R2 F R F') U2 (R' F R F')
+
+
+
+
+
+
+<b><u>T şekilleri:</u></b>
+
+<img src="http://www.speedcubingtr.com/images/oll18.gif">
+(R U R' U') (R' F R F')
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll19.gif">
+F (R U R' U') F'
+
+
+
+
+
+
+<b><u>P şekilleri:</u></b>
+
+<img src="http://www.speedcubingtr.com/images/oll20.gif">
+Fw (R U R' U') Fw'
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll21.gif">
+Fw' (L' U' L U) Fw
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll22.gif">
+S (R U R' U') (R' F R Fw')
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll23.gif">
+(R' U' F) (U R U' R') (F' R)
+
+
+
+
+
+
+<b><u>M şekilleri:</u></b>
+
+<img src="http://www.speedcubingtr.com/images/oll24.gif">
+(R U R' U) (R U' R' U') (R' F R F')
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll25.gif">
+(L' U' L U') (L' U L U) (L F' L' F)
+
+
+
+
+
+
+<b><u>L şekilleri:</u></b>
+
+<img src="http://www.speedcubingtr.com/images/oll26.gif">
+(Rw U) (R' U) (R U') (R' U) (R U'2 Rw')
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll27.gif">
+(Rw' U') (R U') (R' U) (R U') (R' U2 Rw)
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll28.gif">
+(Rw' U) (Rw2 U' Rw2 U') (Rw2 U Rw')
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll29.gif">
+(R' F R' F' R2) U2 y (R' F R F')
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll30.gif">
+F (R U R' U') (R U R' U') F'
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll31.gif">
+F' (L' U' L U) (L' U' L U) F
+
+
+
+
+
+
+<b><u>Büyük yıldırım şekilleri:</u></b>
+
+<img src="http://www.speedcubingtr.com/images/oll32.gif">
+(L F') (L' U' L U) (F U' L')
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll33.gif">
+(R' F) (R U R' U') (F' U R)
+
+
+
+
+
+
+<b><u>C şekilleri:</u></b>
+
+<img src="http://www.speedcubingtr.com/images/oll34.gif">
+(R U R'2 U') (R' F) (R U) (R U') F'
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll35.gif">
+(R' U') (R' F R F') (U R)
+
+
+
+
+
+
+<b><u>Kareler:</u></b>
+
+<img src="http://www.speedcubingtr.com/images/oll36.gif">
+(Rw' U2) (R U R' U) Rw
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll37.gif">
+(Rw U2 R') U' (R U' Rw')
+
+
+
+
+
+
+<b><u>Küçük yıldırım şekilleri:</u></b>
+
+<img src="http://www.speedcubingtr.com/images/oll38.gif">
+(Rw U) (R' U R U2) Rw'
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll39.gif">
+F (R U R' U') F' U F (R U R' U') F'
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll40.gif">
+(Lw' U' L U') (L' U2 Lw)
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll41.gif">
+x' (L' R2) U (R' U R U2) (R' U R' L)
+
+
+
+
+
+
+<b><u>Uçurtma şekilleri:</u></b>
+
+<img src="http://www.speedcubingtr.com/images/oll42.gif">
+F (R U') (R' U' R U) (R' F')
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll43.gif">
+(R U2) (R2' F R F') (R U2 R')
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll44.gif">
+(R U R') y (R' F) (R U') (R' F' R)
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll45.gif">
+(R U R' U') (R' F) (R2 U) (R' U' F')
+
+
+
+
+
+
+<b><u>I şekilleri:</u></b>
+
+<img src="http://www.speedcubingtr.com/images/oll46.gif">
+Fw (R U R' U') (R U R' U') Fw'
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll47.gif">
+(R U R' U R Dw') (R U' R' F')
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll48.gif">
+F (R U R' U' R) y' (R' F) (R B') (R' F')
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll49.gif">
+(R' U2) (R'2 U) (R' U) (R U'2) x' (U' R' U)
+
+
+
+
+
+
+<b><u>L şekilleri:</u></b>
+
+<img src="http://www.speedcubingtr.com/images/oll50.gif">
+(F U R) U2 (R' U' R U) (R' F')
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll51.gif">
+(Rw U Rw') (R U R' U') (Rw U' Rw')
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll52.gif">
+(R' F) (R U R' F' R) y' (R U' R')
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll53.gif">
+(Lw' U' Lw) (L' U' L U) (Lw' U Lw)
+
+
+
+
+
+
+<b><u>Garip şekiller:</u></b>
+
+<img src="http://www.speedcubingtr.com/images/oll54.gif">
+(R U') (R' U2) (R U) y (R U') (R' U' F')
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll55.gif">
+(Lw' U' R' U) (Lw' U2) R Dw (L U L')
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll56.gif">
+(R' F R F')*2 (R U R' U') (R U R')
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/oll57.gif">
+(R' F R F') (R U2 R') Dw' (L' U' L)
+        </div>
+        <div class="pll" style="display:none;">
+        Web sayfasındaki resimleri ve algoritmaları kullanmamıza izin veren Bob Burton'a teşekkür ediyoruz. Onun sitesine de <a href="http://www.cubewhiz.com">www.cubewhiz.com</a> adresinden erişebiliriniz.
+
+<li><a href="javascript:void(window.open('http://www.youtube.com/embed/6LthX8PRUSE', 'Directory', 'width=360, height=330'));"><b>PLL leri tanımak ile ilgili videoyu izlemek için tıklayın</b></a></li>
+<li><a href="javascript:void(window.open('http://www.youtube.com/embed/94LsMUrLW4Y', 'Directory', 'width=480, height=330'));"><b>G Permütasyonlarını tanımak ile ilgili videoyu izlemek için tıklayın</b></a></li>
+
+<b><u>Sadece köşeler:</u></b>
+
+<img src="http://www.speedcubingtr.com/images/pll01.gif"><b><u>Aa</u></b>
+x (R' U R') D2 (R U' R') D2 R2
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/pll02.gif"><b><u>Ab</u></b>
+x R2 D2 (R U R') D2 (R U' R)
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/pll03.gif"><b><u>E</u></b>
+x' (R U') (R' D) (R U R') Uw'2 (R' U) (R D) (R' U' R)
+
+
+
+
+
+
+<b><u>Sadece kenarlar:</u></b>
+
+<img src="http://www.speedcubingtr.com/images/pll04.gif"><b><u>Z</u></b>
+(M'2 U) (M'2 U) (M' U2) (M'2 U2) (M' U2)
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/pll05.gif"><b><u>H</u></b>
+(M'2 U) (M'2 U2) (M'2 U) M'2
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/pll06.gif"><b><u>Ua</u></b>
+(R U' R U) (R U) (R U') (R' U' R2)
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/pll07.gif"><b><u>Ub</u></b>
+(R2 U) (R U R' U') (R' U') (R' U R')
+
+
+
+
+
+
+<b><u>Bitişik bir köşe ve bir kenar:</u></b>
+
+<img src="http://www.speedcubingtr.com/images/pll08.gif"><b><u>Ja</u></b>
+(R' U L') U2 (R U' R') U2 ([L R] U')
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/pll09.gif"><b><u>Jb</u></b>
+(R U R' F') (R U R' U') (R' F) (R2 U') (R' U')
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/pll10.gif"><b><u>T</u></b>
+(R U R' U') (R' F) (R2 U') (R' U' R U) (R' F')
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/pll11.gif"><b><u>Rb</u></b>
+(R' U2) (R U2) (R' F R U R' U') (R' F' R2 U')
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/pll12.gif"><b><u>Ra</u></b>
+(L U'2) (L' U'2) (L F' L' U' L U) (L F L'2 U)
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/pll13.gif"><b><u>F</u></b>
+(R U') (R' U R2') y (R U R' U' F' Dw) (R2' F R F')
+
+
+
+
+
+
+<b><u>G Permütasyonları:</u></b>
+
+<img src="http://www.speedcubingtr.com/images/pll14.gif"><b><u>Gc</u></b>
+(R2' Uw' R U') (R U R' Uw R2) y (R U' R')
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/pll15.gif"><b><u>Ga</u></b>
+(R2' Uw) (R' U R' U' R Uw') R2' y' (R' U R)
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/pll16.gif"><b><u>Gb</u></b>
+(R' U' R) y (R2' Uw R' U) (R U' R Uw' R2')
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/pll17.gif"><b><u>Gd</u></b>
+(R U R') y' (R2' Uw' R U') (R' U R' Uw R2)
+
+
+
+
+
+
+<b><u>Çapraz bir köşe ve bir kenar:</u></b>
+
+<img src="http://www.speedcubingtr.com/images/pll18.gif"><b><u>V</u></b>
+(R' U R' Dw') x (Lw' U R' U') (Lw R U') (R' U R U)
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/pll19.gif"><b><u>Na</u></b>
+(R U') (R' U) (Lw U) (F U') (R' F') (R U' R U) (Lw' U R')
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/pll20.gif"><b><u>Nb</u></b>
+(R' U R U') (R' F') (U' F) (R U R' F) (R' F' R) (U' R)
+
+
+
+
+
+
+
+<img src="http://www.speedcubingtr.com/images/pll21.gif"><b><u>Y</u></b>
+(F R U') (R' U' R U) (R' F') (R U R' U') (R' F R F')
         </p>
     </div>
 </div>
