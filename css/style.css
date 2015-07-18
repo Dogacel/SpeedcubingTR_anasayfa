@@ -87,3 +87,24 @@ nav li li.dropdown > a {
 div.content p{
     display: none;
 }
+
+div.scrambler{
+    background-color: khaki;
+    position: absolute;
+    top: 255px;
+    right: 4%;
+    width: 16%;
+    height: 65%;
+}
+
+div.scrambler.scrolling{
+
+    position: fixed;
+    top: 100px;
+}
+div.scrambler h1, 
+div.scrambler h2,
+div.scrambler h3{
+    padding-top: 40px;
+    padding-left: 30px;
+}

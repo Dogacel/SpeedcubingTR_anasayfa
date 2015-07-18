@@ -7,7 +7,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 <meta name="description" content="A simple slide down menu using jQuery and CSS" />
-<title>Slide Down Menu With jQuery</title>
+<title>SpeedCubingTR</title>
     
 <!-- css -->
 <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,400italic' rel='stylesheet' type='text/css'>
@@ -30,10 +30,20 @@
         );
     }); // end ready
 </script>
+<script>
+$(window).scroll(function () { 
+    if($(this).scrollTop() > 155) // change 50 to what you want (work out how far the nav is from the top of the page alraedy and add it there, that'll make it smoother transition)
+    {
+        $('div.scrambler').addClass('scrolling');
+    } else {
+        $('div.scrambler').removeClass('scrolling');
+    }
+});
+</script>
 
 </head>
 
-<body>
+<body onload="anasayfa()">
 
 <div id="wrapper">
 
@@ -79,7 +89,7 @@
 </nav>
 
 <div id="main">
-    <div class="content">
+    <div class="content" style="padding-right: 10%;">
         <p class="anasayfa">Giriş: <br>
 Rubik küpünü çözmenin birçok yolu vardır. Bu sitede katman katman çözmenin basit ve gelişmiş yöntemleri olan çömez (beginner's) ve Fridrich yönteminin yazılı ve görüntülü, en önemlisi de Türkçe anlatımlarını bulabilirsiniz. Çömez yöntemini kullanarak kısa bir süre içinde 1 dakika gibi ortalamalara erişebilirsiniz. Tavsiye edilen öğrenme sırasını sayfanın altında bulabilirsiniz. <br>
 
@@ -244,6 +254,10 @@ F2L'nin temellerini öğrenip ustalaştıktan sonra da zamanlarınızı v
     </div>
 </div>
 
+<div class="scrambler">
+    <h1>Scramble</h1>
+    <h3>Buraya</h3>
+</div>
 
 <footer>
 </footer>
