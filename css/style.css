@@ -89,6 +89,7 @@ div.content div{
 }
 
 div.scrambler{
+    display: none;
     background-color: khaki;
     position: absolute;
     top: 255px;
