@@ -109,3 +109,18 @@ div.scrambler h3{
     padding-top: 40px;
     padding-left: 30px;
 }
+
+div.chat{
+    
+    position: fixed;
+    bottom: 0px;
+    right: 60px;
+}
+
+div.chat.button:active, button:focus, button{
+    outline: 0;
+    background-image:url('../img/arrow-down.png');
+    background-position:right 20px top 20px;
+    background-repeat:no-repeat;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.4);
+}

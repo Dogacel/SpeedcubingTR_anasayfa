@@ -45,3 +45,6 @@ function giris(){
     $("html").fadeOut();
     window.location.replace("http://www.speedcubingtr.com/forum/index.php?action=login");
 }
+function chatac(){
+    $("div.chat").children("div").slideToggle();
+}
