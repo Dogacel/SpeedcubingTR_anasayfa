@@ -1,4 +1,4 @@
 # SpeedcubingTR anasayfa
 SpeedcubingTR
 
-http://dogacel.com/speedcubingtr/
+http://www.speedcubingtr.com/
